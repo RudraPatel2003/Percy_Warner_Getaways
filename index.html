@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="index.js" defer></script>
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +16,15 @@
 <body>
     <header class="header">
         <img src="../images/Logo.svg" alt="Percy Warner Getaways Logo" class="logo">
-
+        <button class="mobile-navigation-button" data-visible="false"></button>
         <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list" data-visible="false">
                 <li class="nav__list-item"><a href="#" class="nav__link">Locations</a></li>
                 <li class="nav__list-item"><a href="#" class="nav__link">Pricing</a></li>
                 <li class="nav__list-item"><a href="#" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <main class="main">

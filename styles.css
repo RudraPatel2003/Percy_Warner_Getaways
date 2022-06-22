@@ -24,8 +24,8 @@
 body {
     font-family: "Roboto";
     background-image: url(../images/Background-Image.jpg);
-    /* background-repeat: no-repeat; */
-    background-position-y: 35%;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
     min-height: 100%;
 
 }
@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.25rem 4.5rem;
+    padding: 2.25rem 2rem;
 }
 
 .nav__list {
@@ -56,6 +56,10 @@ body {
     text-transform: uppercase;
     color: var(--color-primary);
     font-weight: var(--font-weight-bold);
+}
+
+.mobile-navigation-button {
+    display: none;
 }
 
 /* Main */
@@ -114,7 +118,7 @@ body {
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(5%);
     }
 
     to {
@@ -123,13 +127,64 @@ body {
     }
 }
 
-/* When the buttons stop wrapping, bring the background higher */
+/* When the buttons stop wrapping, bring the background higher and increase padding on nav bar */
 @media (min-width: 26.75em) {
     body {
         background-position-y: 45%;
     }
+
+    .header {
+        padding: 2.25rem 4.5rem;
+    }
 }
 
+@media (max-width: 50em) {
+    .nav__list {
+        position: fixed;
+        inset: 0 0 0 80%;
+        background-color: var(--color-primary);
+        z-index: 10;
+
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+        padding: 5rem 0.5rem;
+        font-size: 1rem;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(100%)
+    }
+
+    .nav__list[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .nav__link{
+        color: var(--color-light)
+    }
+
+    .mobile-navigation-button {
+        display: block;
+        position: absolute;
+        top: 2.375rem;
+        right: 2rem;
+        z-index: 9999;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url(./images/Navigation_Open.svg);
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-navigation-button[data-visible="true"] {
+        background-image: url(./images/Navigation_Close.svg)
+    }
+}
+
+@media (max-width: 25em) {
+    .mobile-navigation-button {
+        right: 1rem;
+    }
+}
 /* Introduce flexbox nav at higher screen widths
 @media (min-width: 50em) {
     .header {
