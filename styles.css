@@ -23,7 +23,7 @@
 
 body {
     font-family: "Roboto";
-    background-image: url(../images/Background-Image.jpg);
+    background-image: url(./images/Background-Image.jpg);
     background-repeat: no-repeat;
     background-position-y: 30%;
     min-height: 100%;
