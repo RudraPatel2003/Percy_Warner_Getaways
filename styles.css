@@ -34,7 +34,10 @@ body {
 .header {
     background-color: var(--color-primary-transparent);
     text-align: center;
-    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.25rem 4.5rem;
 }
 
 .nav__list {
@@ -45,6 +48,7 @@ body {
 
 .nav__list-item {
     list-style: none;
+    margin-left: 2rem
 }
 
 .nav__link {
@@ -126,7 +130,7 @@ body {
     }
 }
 
-/* Introduce flexbox nav at higher screen widths */
+/* Introduce flexbox nav at higher screen widths
 @media (min-width: 50em) {
     .header {
         display: flex;
@@ -138,4 +142,4 @@ body {
     .nav__list-item {
         margin-left: 2rem
     }
-}
+} */
