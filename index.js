@@ -12,3 +12,13 @@ navToggle.addEventListener("click", () => {
         navToggle.setAttribute("data-visible", "false")
     }
 })
+
+// Stop animations from happening on window resize
+let resizeTimer;
+window.addEventListener("resize", () => {
+  navBar.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    navBar.classList.remove("resize-animation-stopper");
+  }, 400);
+});

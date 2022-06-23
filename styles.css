@@ -30,6 +30,11 @@ body {
 
 }
 
+.resize-animation-stopper {
+    animation: none !important;
+    transition: none !important;
+  }
+
 /* Navigation Bar */
 .header {
     background-color: var(--color-primary-transparent);
@@ -138,6 +143,7 @@ body {
     }
 }
 
+/* Hamburger menu */
 @media (max-width: 50em) {
     .nav__list {
         position: fixed;
