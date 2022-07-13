@@ -191,16 +191,3 @@ body {
         right: 1rem;
     }
 }
-/* Introduce flexbox nav at higher screen widths
-@media (min-width: 50em) {
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2.25rem 4.5rem;
-    }
-
-    .nav__list-item {
-        margin-left: 2rem
-    }
-} */
