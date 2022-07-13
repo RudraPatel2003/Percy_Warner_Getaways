@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <a href="https://rudrapatel2003.github.io/Percy_Warner_Getaways"><img src="https://raw.githubusercontent.com/RudraPatel2003/Percy_Warner_Getaways/images/Logo.png"></a>
+    <a href="https://rudrapatel2003.github.io/Percy_Warner_Getaways"><img src="https://raw.githubusercontent.com/RudraPatel2003/Percy_Warner_Getaways/main/images/Logo.png"></a>
   <br>
   <a href="https://rudrapatel2003.github.io/Percy_Warner_Getaways">Percy Warner Getaways</a>
   <br>
